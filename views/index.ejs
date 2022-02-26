@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>    
+  </head>
+  <body>
+    <form action="/add_user" method="post" enctype="multipart/form-data">
+      
+      <div>
+        <label for="username-input">Username</label>
+        <input
+          required
+          type="text"
+          name="username"
+          id="username-input"
+        />
+      </div>
+
+      <div>
+        <label for="email-input">Email</label>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email-input"
+        />
+      </div>
+
+      <div >
+        <label  for="profile_picture-input"
+          >Profile picture</label
+        >
+
+        <input
+          required
+          type="file"
+          name="img"
+          id="img"
+        />
+      </div>
+
+      <div>
+        <label for="cv_file-input">CV </label>
+        <input
+          required
+          type="file"
+          name="cv"
+          id="cv"
+        />
+      </div>
+
+      <div>
+        <button type="submit">Send</button>
+      </div>
+    </div>
+  </form>
+  </body>
+</html>
